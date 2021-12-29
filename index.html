@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  
+  <div class="container">
+    <div class="section" id="speak">
+      <h1>How do I spell...</h1>
+      <a id="listen" class="waves-effect waves-light btn" onclick="startRecognition()"><i class="large material-icons">keyboard_voice</i></a>
+    </div>
+    <div class="divider"></div>
+
+    <div id="spell" class="yellow lighten-4 section" height="700" style="border:1px dotted">
+      <h1 class="output" id="word" align="center"></h1>
+    </div>
+  
+  </body>
+</html>
