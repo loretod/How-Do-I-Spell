@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>How Do I Spell?</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
      <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -19,9 +19,9 @@
     <div class="section" id="speak">
       <h1>How do I spell...</h1>
       <a id="listen" class="waves-effect waves-light btn" onclick="startRecognition()"><i class="large material-icons">keyboard_voice</i></a>
+      <a id="again" class="waves-effect waves-light btn" onclick="reRead()"><i class="large material-icons">redo</i></a>
     </div>
     <div class="divider"></div>
-
     <div id="spell" class="yellow lighten-4 section" height="700" style="border:1px dotted">
       <h1 class="output" id="word" align="center"></h1>
     </div>

@@ -15,6 +15,15 @@ function startRecognition(){
   console.log('start speaking, I an listening..');
 }
 
+function reRead(utterText){
+  text = document.getElementById("word").innerHTML;
+  utterText = new SpeechSynthesisUtterance(text);
+  document.getElementById("again").style.backgroundColor="orange";
+  console.log(text);
+  synth.speak(utterText);
+  document.getElementById("again").style.backgroundColor="green";
+}
+
 recognition.onresult = function(event){
   var speechGot = event.results[0][0].transcript.toLowerCase();
   console.log(speechGot);
@@ -23,4 +32,5 @@ recognition.onresult = function(event){
   console.log('I am speaking your text now.')
   document.getElementById('word').innerHTML = speechGot;
   document.getElementById("listen").style.backgroundColor="green";
+  return utterText;
 }
